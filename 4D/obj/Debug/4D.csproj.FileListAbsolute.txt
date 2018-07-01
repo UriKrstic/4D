@@ -1,0 +1,9 @@
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\4D.exe.config
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\4D.exe
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\4D.pdb
+C:\Users\urosk\Desktop\4D\4D\obj\Debug\4D.csprojResolveAssemblyReference.cache
+C:\Users\urosk\Desktop\4D\4D\obj\Debug\4D.exe
+C:\Users\urosk\Desktop\4D\4D\obj\Debug\4D.pdb
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\OpenTK.dll
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\OpenTK.pdb
+C:\Users\urosk\Desktop\4D\4D\bin\Debug\OpenTK.xml
