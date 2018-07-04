@@ -15,36 +15,40 @@ namespace _4D
         {
 
             GameWindow g = new GameWindow(640,480);
-            game gm = new game(g); 
+            game gm = new game(g);
+            gm.Run(60.0);
         }
     }
 
-    class game
+    class game : GameWindow
     {
-        GameWindow g;
         public game(GameWindow g)
         {
-            this.g = g;
-            Start();
         }
 
-        void Start()
+        protected override void OnLoad(EventArgs e)
         {
-            g.Load += loaded;
-            g.RenderFrame += renderF;
-            g.Run(1.0 / 60.0);
-
+            base.OnLoad(e);
+            GL.ClearColor(1.0f, 0.8f, 0.9f, 1f);
         }
 
-        void renderF(object o, EventArgs e)
+        protected override void OnRenderFrame(FrameEventArgs e)
         {
+            base.OnRenderFrame(e);
             GL.Clear(ClearBufferMask.ColorBufferBit);
-            g.SwapBuffers();
+            SwapBuffers();
+
         }
-        void loaded(object o,EventArgs e)
-        {
-            GL.ClearColor(1.0f,0.8f,0.9f,1f);
-        }
+
+        //void renderF(object o, EventArgs e)
+        //{
+        //    GL.Clear(ClearBufferMask.ColorBufferBit);
+        //    g.SwapBuffers();
+        //}
+        //void loaded(object o,EventArgs e)
+        //{
+        //    GL.ClearColor(1.0f,0.8f,0.9f,1f);
+        //}
 
     }
 }
